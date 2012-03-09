@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Unique values from group of select</title>
+   <meta name="description" content="Example from http://pykaso.net">
+   <meta name="author" content="Lukas Gergel aka Pykaso">
+   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <script src="jquery.uniqselect.js"></script>
+     
+   <!-- magic start's here-->
+   <script>  
+   $(document).ready(function(){
+      $("fieldset").uniqselect();
+   });
+   </script>
+</head>
+<body>
+   <form>
+      <fieldset id="group1">
+         <legend>Group1 - 3 selects, unique values (1-5)</legend>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>                  
+      </fieldset>
+      <fieldset id="group2">
+         <legend>Group2 - 6 selects, unique values (1-5)</legend>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>                            
+      </fieldset>
+      <fieldset id="group3">
+         <legend>Group3 - 4 selects, unique values (1-4)</legend>
+         <!-- plugin also support complex structure in group -->
+         <div>
+            <select class="custSelect">
+               <option value=""></option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+            </select>
+         </div>
+         <table>
+            <tr>
+               <td>
+                  <select class="custSelect">
+                     <option value=""></option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+               </td>
+               <td>
+                  <select class="custSelect">
+                     <option value=""></option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+               </td>
+            </tr>
+         </table>
+         <select class="custSelect">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+         </select>                            
+      </fieldset>
+   </form>
+</body>
+</html>
