@@ -21,12 +21,14 @@
 // 
 */
 $.fn.uniqselect = function(container){
-      var option = function(value){var v = ((value==0)?'':value); return '<option value="'+v+'">'+v+'</option>';}
+      var option = function(value){
+    	  var v = ((value==0)?'':value); return '<option value="'+v+'">'+v+'</option>';
+      };
      
       var updateSelectOptions = function(selectNodes, defOptionsCount){
          var vals=[], opts=[];
       
-         selectNodes.filter(function(){return $(this).val()!=''}).each(function(){
+         selectNodes.filter(function(){return $(this).val()!='';}).each(function(){
             vals.push(parseInt($(this).val(),10));
          });
       
@@ -45,13 +47,13 @@ $.fn.uniqselect = function(container){
                opt[val] = option(val);
             }
             
-            $('option',select).each(function(){$(this).remove()});
+            $('option',select).each(function(){$(this).remove();});
             
             $.each(opt,function(i){
                if(opt[i]){
                   select.append(opt[i]);
                }
-            })
+            });
             $(this).val(val);
          });     
       };
